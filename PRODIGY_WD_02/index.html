@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stopwatch web Application | Arun Kumar</title>
+</head>
+
+<body>
+    <div class="stopwatch-container">
+        <h1>Stopwatch web Application </h1>
+        <div class="circle"></div>
+        <div class="display">
+            <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
+        </div>
+        <div class="controls">
+            <button id="start" onclick="startStopwatch()">Start</button>
+            <button id="pause" onclick="pauseStopwatch()" disabled>Pause</button>
+            <button id="reset" onclick="resetStopwatch()">Reset</button>
+            <button id="lap" onclick="recordLap()">Lap</button>
+        </div>
+        <div class="laps" id="laps"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
